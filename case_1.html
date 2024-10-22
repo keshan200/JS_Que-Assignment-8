@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Que</title>
+
+
+    <link rel="stylesheet"  href=".idea/assets/styles/case_1.css">
+
+
+  <style>
+    body{
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+  </style>
+
+</head>
+
+
+<body>
+
+<section class="section">
+
+  <div class="box">
+    <p class="letter" id="A">A</p>
+  </div>
+
+  <div class="box">
+    <p class="letter" id="B">B</p>
+  </div>
+
+  <div class="box">
+    <p class="letter" id="C">C</p>
+  </div>
+
+  <div class="box">
+    <p class="letter" id="D">D</p>
+  </div>
+
+  <div class="box">
+    <p class="letter" id="E">E</p>
+  </div>
+
+  <div class="box">
+    <p class="letter" id="F">F</p>
+  </div>
+</section>
+
+
+<div class="btn-sec">
+  <button class="startbtn" id="startbtn">Start</button>
+  <button class="stopbtn" id="stopbtn">Stop</button>
+</div>
+
+
+<!--JQuery-->
+<script src=".idea/assets/lib/jquery-3.7.1.min.js"></script>
+
+<!--funtion from JQuery-->
+<script src=".idea/assets/js/case_1Script.js"></script>
+
+<!--funtion From Pure JS-->
+<!--<script>
+
+  let array = ["A","B","C","D","E","F"];
+
+    document.getElementById('startbtn').addEventListener('click',()=>{
+       var settime = setInterval(()=>{
+           let remove_index = array.pop();
+           array.unshift(remove_index);
+
+           document.getElementById('A').innerText = array[5];
+           document.getElementById('B').innerText = array[4];
+           document.getElementById('C').innerText = array[3];
+           document.getElementById('D').innerText = array[2];
+           document.getElementById('E').innerText = array[1];
+           document.getElementById('F').innerText = array[0];
+
+         },900);
+
+
+      document.getElementById('stopbtn').addEventListener('click',()=>{
+          clearTimeout(settime);
+      })
+
+    });
+
+
+</script>-->
+
+
+</body>
+</html>

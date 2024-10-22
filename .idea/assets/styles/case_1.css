@@ -1,0 +1,55 @@
+
+.section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    gap: 160px;
+    height: auto;
+
+    background-color: #c6c6c6;
+    border-radius: 50px;
+}
+
+.letter{
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.btn-sec{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+
+.btn-sec button {
+    font-size: 1.6rem;
+    padding: 10px;
+    width: 200px;
+    border-radius: 30px;
+    color: white;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.startbtn {
+    background-color: limegreen;
+    box-shadow: 0 4px 6px rgba(0, 255, 0, 0.4);
+    transition: all 0.3s ease;
+}
+
+.stopbtn {
+    background-color: red;
+    box-shadow: 0 4px 6px rgba(255, 0, 0, 0.4);
+    transition: all 0.3s ease;
+}
+
+/* Hover effect for buttons */
+.btn-sec button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    filter: brightness(1.1);
+    cursor: pointer;
+}
